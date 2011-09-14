@@ -1,14 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using EventStore;
 using EventStore.Dispatcher;
 using EventStore.Persistence;
 using EventStore.Serialization;
 using Magnum.Reflection;
 using MassTransit;
 
-namespace Logibit.Rebuild
+namespace EventStore.Rebuilder
 {
 	internal class Program
 	{

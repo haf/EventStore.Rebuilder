@@ -1,11 +1,10 @@
 ﻿using System;
 using System.IO;
-using Interfleet.Domain.Events;
 using MassTransit;
 using Newtonsoft.Json;
 using log4net.Config;
 
-namespace Logibit.Example
+namespace EventStore.ExampleRead
 {
 	internal class Program : Consumes<VehicleDefectReported>.All
 	{
