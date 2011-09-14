@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Logibit.Rebuild")]
+[assembly: AssemblyTitle("MyCompany.Domain.Events")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Microsoft")]
-[assembly: AssemblyProduct("Logibit.Rebuild")]
+[assembly: AssemblyProduct("MyCompany.Domain.Events")]
 [assembly: AssemblyCopyright("Copyright © Microsoft 2011")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("87cc64ed-cf73-4de7-aff3-02bc58c4107b")]
+[assembly: Guid("33f33d9a-0a63-4220-94dd-90794f4b4d98")]
 
 // Version information for an assembly consists of the following four values:
 //

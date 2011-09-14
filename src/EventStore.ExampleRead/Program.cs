@@ -1,12 +1,13 @@
 ﻿using System;
 using System.IO;
 using MassTransit;
+using MyCompany.Domain.Events;
 using Newtonsoft.Json;
 using log4net.Config;
 
 namespace EventStore.ExampleRead
 {
-	internal class Program : Consumes<VehicleDefectReported>.All
+	internal class Program : Consumes<ThingCreated>.All
 	{
 		private IServiceBus _bus;
 
@@ -53,9 +54,9 @@ namespace EventStore.ExampleRead
 				});
 		}
 
-		public void Consume(VehicleDefectReported message)
+		public void Consume(ThingCreated message)
 		{
-			lock(_serializer)
+			lock (_serializer)
 			{
 				Console.WriteLine("Consuming {0}", message);
 
