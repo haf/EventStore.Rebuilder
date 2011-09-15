@@ -48,7 +48,7 @@ namespace EventStore.ExampleRead
 		{
 			_bus = ServiceBusFactory.New(conf =>
 				{
-					conf.ReceiveFrom("rabbitmq://localhost/Logibit.Example");
+					conf.ReceiveFrom("rabbitmq://localhost/EventStore.ExampleRead");
 					conf.UseRabbitMqRouting();
 					conf.Subscribe(x => x.Consumer(() => new Program()));
 				});

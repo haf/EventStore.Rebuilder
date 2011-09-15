@@ -36,6 +36,7 @@ namespace EventStore.Rebuilder
 			}
 
 			p.Stop();
+			Console.ReadKey(true);
 		}
 
 		private int Run(IList<string> args)
@@ -96,8 +97,8 @@ namespace EventStore.Rebuilder
 es-rebuild <target-exchange> <connection-string> <ar-type> [ar-id]
 
 Examples:
-	es-rebuild Company.Listener raven       Company.Domain.Division
-			   ^ Exchange       ^ Source    ^ AggregateType
+EventStore.Rebuilder.exe Company.Listener raven       Company.Domain.Division
+                         ^ Exchange       ^ Source    ^ AggregateType
 ");
 		}
 	}

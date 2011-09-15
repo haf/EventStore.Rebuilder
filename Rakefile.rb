@@ -45,7 +45,7 @@ end
 
 task :rb_output => [:msbuild] do
   target = File.join(FOLDERS[:binaries], PROJECTS[:rb][:id])
-  copy_files FOLDERS[:rb][:out], "*.{xml,dll,pdb,config}", target
+  copy_files FOLDERS[:rb][:out], "*.{xml,dll,exe,pdb,config}", target
   CLEAN.include(target)
 end
 
